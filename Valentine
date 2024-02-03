@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ff3e6c;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ff3e6c;
+        }
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ff3e6c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #d6304a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Be My Valentine?</h1>
+        <p>Dear Connie Venique,</p>
+        <p>On this special day, I want to express my love for you. You mean everything to me, and I can't imagine my life without you.</p>
+        <p>Would you do me the honor of being my Valentine?</p>
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+        <p id="responseMessage" style="display: none;"></p>
+    </div>
+
+    <script>
+        document.getElementById("yesButton").addEventListener("click", function() {
+            document.getElementById("responseMessage").style.display = "block";
+            document.getElementById("responseMessage").textContent = "I'm so happy you said yes! I love you!";
+        });
+
+        document.getElementById("noButton").addEventListener("click", function() {
+            document.getElementById("responseMessage").style.display = "block";
+            document.getElementById("responseMessage").textContent = "I understand. Just know that I love you no matter what.";
+        });
+    </script>
+</body>
+</html>
